@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { ViajeComponent } from './viaje/viaje.component';
 import { DetalleComponent } from './detalle/detalle.component';
+import { HeroService } from './hero.service';
+import { ViajeService } from './viaje.service';
 
 
 @NgModule({
@@ -20,7 +22,7 @@ import { DetalleComponent } from './detalle/detalle.component';
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [HeroService, ViajeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
