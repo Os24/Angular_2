@@ -1,0 +1,11 @@
+<div *ngIf="viaje">
+	
+	<h2>{{viajeSeleccionado.boleto}}Aerolinea</h2>
+	<div><span>$</span>{{viajeSeleccionado.precio}}</div>
+	<div>
+		<label>name:
+			<input [(ngModel)]="viajeSeleccionado.boleto" placeholder="Aerolinea"  >
+			
+		</label>
+	</div>
+</div>
